@@ -1,3 +1,5 @@
+package com.example.mockito;
+
 import Dao.UserDaoImpl;
 import Model.User;
 import Service.UserServiceImpl;
@@ -37,6 +39,6 @@ class UserServiceTest {
     @Test
     void checkUserExistShouldReturnFalse() {
         when(userDaoImpl.getUserList()).thenReturn(userList);
-        Assertions.assertTrue(userServiceImpl.checkUserExist(user2ForTest));
+        Assertions.assertFalse(userServiceImpl.checkUserExist(user2ForTest));
     }
 }

@@ -1,3 +1,5 @@
+package com.example.mockito;
+
 import Dao.UserDaoImpl;
 import Model.User;
 import org.junit.jupiter.api.Assertions;
@@ -11,11 +13,6 @@ class UserDaoTest {
 
     private User userForTest = new User("Петя", 23);
     private UserDaoImpl userDaoImpl = new UserDaoImpl(Arrays.asList(userForTest));
-
-/*
-    public UserDaoTest(UserDaoImpl userDaoImpl) {
-        this.userDaoImpl = userDaoImpl;
-    }*/
 
     @Test
     void shouldGetUserByNameReturnUser() {
