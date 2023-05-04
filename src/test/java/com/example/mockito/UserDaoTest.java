@@ -12,7 +12,9 @@ class UserDaoTest {
 
 
     private User userForTest = new User("Петя", 23);
-    private UserDaoImpl userDaoImpl = new UserDaoImpl(Arrays.asList(userForTest));
+
+
+    private UserDaoImpl userDaoImpl = new UserDaoImpl();
 
     @Test
     void shouldGetUserByNameReturnUser() {

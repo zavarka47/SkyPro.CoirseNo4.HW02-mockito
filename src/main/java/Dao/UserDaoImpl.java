@@ -7,9 +7,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class UserDaoImpl implements UserDao {
-    private List<User> userList = new ArrayList<>();
+    private List<User> userList;
+    /*= new ArrayList<>();*/
 
-    public UserDaoImpl(List<User> userList) {
+    public UserDaoImpl(/*List<User> userList*/) {
         this.userList = Arrays.asList(
                 new User("Петя", 23),
                 new User("Коля", 14),
